@@ -130,3 +130,38 @@ library.removeBook('The Alchemist');
 console.log(library.listBooks());
 console.log(library.bookCount());
 
+// PROBLEM FOUR
+Date.prototype.formattedDate = function(){
+	var m = this.getMonth();
+	var d = this.getDay();
+	var y = this.getYear();
+	var monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December" ];
+  return monthNames[m] + ',' + d + ',' + y;
+}
+var date = new Date();
+console.log(date.formattedDate());
+
+// PROBLEM FIVE
+
+Date.prototype.formattedTime = function(){
+	var h = this.getHour();
+	var m = this.getMinutes();
+	var s = this.getSeconds();
+	return '' + (h) + ':' + (m) + ':' + (s);
+}
+
+var date = new Date();
+console.log(date.formattedTime());
+
+
+
+
+
+
+
+
+
+
+
+
+
